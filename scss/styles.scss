@@ -1,0 +1,25 @@
+@import "bootstrap";
+
+#cloth {
+  height: 1000px;
+}
+
+#filter {
+    z-index: 1;
+}
+
+#filterModal .modal-footer {
+    justify-content: center;
+}
+
+@include media-breakpoint-down("lg") {
+  #filter {
+    top: 100px;
+  }
+}
+
+@include media-breakpoint-up("lg") {
+  #filter {
+    top: 150px;
+  }
+}
