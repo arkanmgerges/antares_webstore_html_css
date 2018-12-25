@@ -12,14 +12,17 @@
     justify-content: center;
 }
 
-@include media-breakpoint-down("lg") {
+@include media-breakpoint-down("md") {
   #filter {
+    position: fixed;
     top: 100px;
+    right: 0;
+    left: 0;
   }
 }
 
-@include media-breakpoint-up("lg") {
-  #filter {
-    top: 150px;
-  }
-}
+// @include media-breakpoint-down("lg") {
+//   #filter {
+//     top: 200;
+//   }
+// }
