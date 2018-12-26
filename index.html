@@ -95,19 +95,19 @@
 			<div class="row">
 				<div id="filter" class="col-sm-12 col-lg-3">
 					<ul class="nav nav-pills justify-content-between">
-					<li class="nav-item bg-light w-25 d-lg-none">
-						<div class="dropdown">
-							<button class="btn btn-outline-primary dropdown-toggle w-100 nav-link" data-toggle="dropdown">Relevance</button>
-							<div class="dropdown-menu">
-								<a href="#" class="dropdown-item">Latest</a>
-								<a href="#" class="dropdown-item">Price - low to high</a>
-								<a href="#" class="dropdown-item">Price - high to low</a>
+						<li class="nav-item bg-light w-25 d-lg-none">
+							<div class="dropdown">
+								<button class="btn btn-outline-primary dropdown-toggle w-100 nav-link" data-toggle="dropdown">Relevance</button>
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item">Latest</a>
+									<a href="#" class="dropdown-item">Price - low to high</a>
+									<a href="#" class="dropdown-item">Price - high to low</a>
+								</div>
 							</div>
-						</div>
-					</li>
+						</li>
 
-					<li class="nav-item bg-light w-25 d-lg-none"><a class="nav-link btn btn-outline-primary" href="#" data-toggle="modal"
-						 data-target="#filterModal2">Filter</a></li>
+						<li class="nav-item bg-light w-25 d-lg-none"><a class="nav-link btn btn-outline-primary" href="#" data-toggle="modal"
+							 data-target="#filterModal2">Filter</a></li>
 					</ul>
 					<ul class="nav nav-pills justify-content-between d-none d-lg-flex">
 						<li class="nav-item bg-light w-100 d-none d-lg-flex">
@@ -360,56 +360,63 @@
 									</div>
 								</div>
 							</div>
-						</ul>
+					</ul>
 				</div>
 				<!-- Eof Filter -->
 				</li>
-				
-			
 
 
 
 
-			
-			<div class="col-sm-12 col-lg-9">
-				<!-- Filter -->
-				<ul class="nav nav-pills justify-content-between">
-					<li class="nav-item bg-light  d-none d-lg-flex">
-						<div class="dropdown">
-							<button class="btn btn-outline-primary dropdown-toggle w-100 nav-link" data-toggle="dropdown">Relevance</button>
-							<div class="dropdown-menu">
-								<a href="#" class="dropdown-item">Latest</a>
-								<a href="#" class="dropdown-item">Price - low to high</a>
-								<a href="#" class="dropdown-item">Price - high to low</a>
-							</div>
-						</div>
-					</li>
-					<li class="nav-item bg-light d-none d-lg-flex">
-						<form class="form-inline">
-							<label class="mx-1" for="viewSelect">View</label>
-							<select class="custom-select" id="viewSelect">
-								<option value="1">60</option>
-								<option value="2">100</option>
-								<option value="3">120</option>
-								<option value="4">180</option>
-								<option value="5">220</option>
-							</select>
 
-							<button class="btn btn-ouline-primary rounded-circle mx-1">&LeftArrow;</button>
-							<select class="custom-select mx-1" id="viewSelect">
-								<option value="1" selected>Page 1</option>
-								<option value="2">Page 2</option>
-							</select>
-							<span>of 2</span>
-							<button class="btn btn-ouline-primary rounded-circle mx-1">&RightArrow;</button>
-						</form>
-					</li>
-				</ul>
-				<!-- Eof Filter -->
-			<!-- Cloth -->
-			<!-- Eof Cloth -->
+
+
+				<div class="col-sm-12 col-lg-9">
+					<!-- Filter -->
+					<div class="filter-lg-fixed-top">
+						<ul class="nav nav-pills justify-content-between">
+							<li class="nav-item bg-light  d-none d-lg-flex">
+								<div class="dropdown">
+									<button class="btn btn-outline-primary dropdown-toggle w-100 nav-link" data-toggle="dropdown">Relevance</button>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Latest</a>
+										<a href="#" class="dropdown-item">Price - low to high</a>
+										<a href="#" class="dropdown-item">Price - high to low</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item bg-light d-none d-lg-flex">
+								<form class="form-inline">
+									<label class="mx-1" for="viewSelect">View</label>
+									<select class="custom-select" id="viewSelect">
+										<option value="1">60</option>
+										<option value="2">100</option>
+										<option value="3">120</option>
+										<option value="4">180</option>
+										<option value="5">220</option>
+									</select>
+
+									<button class="btn btn-ouline-primary rounded-circle mx-1">&LeftArrow;</button>
+									<select class="custom-select mx-1" id="viewSelect">
+										<option value="1" selected>Page 1</option>
+										<option value="2">Page 2</option>
+									</select>
+									<span>of 2</span>
+									<button class="btn btn-ouline-primary rounded-circle mx-1">&RightArrow;</button>
+								</form>
+							</li>
+						</ul>
+					</div>
+					<!-- Eof Filter -->
+					<!-- Cloth -->
+					<div class="cloth-row row justify-content-around mt-50">
+						<div class="cloth-col col-lg-3 col-sm-4 bg-danger mt-3" style="height: 200px; z-index: 1;"></div>
+						<div class="cloth-col col-lg-3 col-sm-4 bg-warning mt-3" style="height: 200px; z-index: 1;"></div>
+						<div class="cloth-col col-lg-3 d-none d-lg-flex bg-secondary mt-3" style="height: 200px; z-index: 1;"></div>
+					</div>
+					<!-- Eof Cloth -->
+				</div>
 			</div>
-		</div>
 		</div>
 
 		<!-- Filter modal -->

@@ -5,7 +5,7 @@
 }
 
 #filter {
-    z-index: 1;
+    z-index: 5;
 }
 
 #filterModal .modal-footer {
@@ -19,10 +19,27 @@
     right: 0;
     left: 0;
   }
+
+  .cloth-row {
+      margin-top: 70px;
+  }
 }
 
-// @include media-breakpoint-down("lg") {
-//   #filter {
-//     top: 200;
-//   }
-// }
+@include media-breakpoint-up("md") {
+  .filter-lg-fixed-top {
+      position: fixed;
+      top: 145px; 
+      width: 72%;
+      z-index: 5;
+  }
+
+    .cloth-row {
+      margin-top: 70px;
+  }
+}
+
+@include media-breakpoint-down("sm") {
+    .cloth-col {
+        flex: 0 0 33%;
+    }
+}

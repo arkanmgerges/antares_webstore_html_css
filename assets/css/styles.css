@@ -9521,7 +9521,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #filter {
-  z-index: 1;
+  z-index: 5;
 }
 
 #filterModal .modal-footer {
@@ -9536,6 +9536,29 @@ a.text-dark:hover, a.text-dark:focus {
     top: 100px;
     right: 0;
     left: 0;
+  }
+  .cloth-row {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-lg-fixed-top {
+    position: fixed;
+    top: 145px;
+    width: 72%;
+    z-index: 5;
+  }
+  .cloth-row {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cloth-col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
